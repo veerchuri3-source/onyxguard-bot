@@ -415,37 +415,39 @@ app.get(["/guilds/:id", "/api/guilds/:id"], async (req, res) => {
 // Guild settings cache
 const guildSettingsCache = new Map();
 
-// Helper default settings structure
+// Helper default settings structure (new server starts with all security/automation features OFF until enabled)
 function getDefaultGuildSettings() {
   return {
     prefix: "$",
     disabledCommands: [],
     antinuke: {
-      enabled: true,
+      enabled: false,
       punishment: "ban",
-      antiBan: true,
-      antiKick: true,
-      antiChannelDelete: true,
-      antiRoleDelete: true,
-      antiBot: true,
-      antiWebhook: true,
-      antiVanity: true,
+      antiBan: false,
+      antiKick: false,
+      antiChannelDelete: false,
+      antiRoleDelete: false,
+      antiBot: false,
+      antiWebhook: false,
+      antiVanity: false,
+      antiPrune: false,
       whitelist: [],
     },
     automod: {
-      enabled: true,
-      antiSpam: true,
-      antiLinks: true,
+      enabled: false,
+      antiSpam: false,
+      antiLinks: false,
       badWords: false,
-      massMention: true,
-      antiCaps: true,
-      blockedWords: ["discord.gg/", "nitro", "free nitro"],
+      massMention: false,
+      antiCaps: false,
+      antiZalgo: false,
+      blockedWords: [],
       whitelist: [],
     },
     welcome: {
-      enabled: true,
+      enabled: false,
       channelId: "",
-      content: "Welcome {user} to {server}! Read the rules and enjoy your stay.",
+      content: "Welcome {user} to {server}!",
       autorole: "",
       embeds: {},
     },
@@ -478,7 +480,7 @@ app.get(["/guilds/:id/settings", "/api/guilds/:id/settings"], async (req, res) =
             prefix: gData?.prefix || "$",
             disabledCommands: Array.isArray(gData?.disabledCommands) ? gData.disabledCommands : [],
             welcome: {
-              enabled: Boolean(gData?.welcome?.channel || gData?.welcome?.content),
+              enabled: Boolean(gData?.welcome?.enabled || (gData?.welcome?.channel && String(gData.welcome.channel).trim() !== "")),
               channelId: gData?.welcome?.channel || "",
               content: gData?.welcome?.content || "Welcome {user} to {server}!",
               embeds: gData?.welcome?.embeds || {},
