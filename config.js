@@ -16,11 +16,11 @@ module.exports = {
     totalClusters: "auto",
   },
   Client: {
-    Token: process.env.DISCORD_BOT_TOKEN || localConfig.Token || "",
+    Token: process.env.DISCORD_BOT_TOKEN || process.env.BOT_TOKEN || process.env.TOKEN || localConfig.Token || "",
     Prefix: process.env.PREFIX || "$",
     VanityGuardToken: "",
-    botId: process.env.BOT_ID || "1556216846188019712",
-    botSecret: process.env.DISCORD_CLIENT_SECRET || localConfig.botSecret || "",
+    botId: process.env.DISCORD_CLIENT_ID || process.env.BOT_ID || process.env.CLIENT_ID || "1556216846188019712",
+    botSecret: process.env.DISCORD_CLIENT_SECRET || process.env.BOT_SECRET || process.env.CLIENT_SECRET || localConfig.botSecret || "",
     CallbackURL: "http://localhost:5173/dashboard",
     OAuthURL:
       "https://discord.com/oauth2/authorize?client_id=1556216846188019712&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Fdashboard&scope=identify+guilds",
@@ -125,6 +125,7 @@ module.exports = {
   Database: {
     Uri:
       process.env.MONGO_URI ||
+      process.env.MONGODB_URI ||
       "mongodb+srv://CodeXDev:OMzLUdWAMMquDVLQ@cluster0.drpmd3y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
   },
   Webhook: {
