@@ -1,0 +1,2411 @@
+[
+  {
+    "name": "antinuke",
+    "description": "Complete Server Protection & Antinuke Security System",
+    "category": "Antinuke",
+    "usage": "$antinuke [enable|disable|status|setlog|config]",
+    "aliases": [
+      "antiwizz",
+      "an",
+      "security"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "Administrator",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "vanityguard",
+    "description": "Protects your server's vanity URL raiders/nukers",
+    "category": "Moderation",
+    "usage": "$vanityguard <enable/disable>",
+    "aliases": [
+      "antivanity"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "Administrator",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "whitelist",
+    "description": "Manage Antinuke & AutoMod granular whitelist permissions",
+    "category": "Antinuke",
+    "usage": "$whitelist <add|remove|show|reset> [@user]",
+    "aliases": [
+      "wl"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "anticaps",
+    "description": "Enable or disable Anti-Caps AutoMod protection against excessive capital letters",
+    "category": "AutoMod",
+    "usage": "$anticaps enable",
+    "aliases": [
+      "capsblock",
+      "anticap"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "ManageMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "antilink",
+    "description": "Create or disable Anti-Link AutoMod rule with a custom block message",
+    "category": "AutoMod",
+    "usage": "$antilink enable",
+    "aliases": [
+      "linkblock"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageGuild"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "antimention",
+    "description": "Protect your server against excessive user, role, and mass pings",
+    "category": "AutoMod",
+    "usage": "$antimention",
+    "aliases": [
+      "mentionblock",
+      "antimassmention"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageGuild",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "automod",
+    "description": "Advanced Server Auto-Moderation & Protection System",
+    "category": "AutoMod",
+    "usage": "$automod [enable|disable|status|setlog|whitelist]",
+    "aliases": [
+      "automoderation",
+      "am"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "setupautomod",
+    "description": "Interactive AutoMod setup & configuration",
+    "category": "AutoMod",
+    "usage": "$setupautomod",
+    "aliases": [
+      "automodsetup",
+      "amsetup"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "blacklistword",
+    "description": "Create or disable Blacklist Words AutoMod rule with a custom block message",
+    "category": "AutoMod",
+    "usage": "$blacklistword enable",
+    "aliases": [
+      "badwordblock"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageGuild"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "resetautomod",
+    "description": "Remove all AutoMod rules from your server",
+    "category": "AutoMod",
+    "usage": "$resetautomod",
+    "aliases": [
+      "automodreset",
+      "amreset"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageGuild"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "birthday",
+    "description": "Manage birthdays",
+    "category": "Utilities",
+    "usage": "$birthday set <YYYY-MM-DD>",
+    "aliases": [
+      "bday"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "acceptmarry",
+    "description": "Accepts a marriage proposal.",
+    "category": "Fun",
+    "usage": "$am",
+    "aliases": [
+      "am",
+      "acceptmarry"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "blush",
+    "description": "Blush a user",
+    "category": "Fun",
+    "usage": "$blush <user>",
+    "aliases": [
+      "blush"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "bonk",
+    "description": "Bonk a user",
+    "category": "Fun",
+    "usage": "$bonk <user>",
+    "aliases": [
+      "bonk"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "cry",
+    "description": "Cry with a user",
+    "category": "Fun",
+    "usage": "$cry <user>",
+    "aliases": [
+      "cry"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "cuddle",
+    "description": "Cuddle with a user",
+    "category": "Fun",
+    "usage": "$cuddle <user>",
+    "aliases": [
+      "cuddle",
+      "hug"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "dance",
+    "description": "Dance with a user",
+    "category": "Fun",
+    "usage": "$dance <user>",
+    "aliases": [
+      "dance"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "dare",
+    "description": "Get a random dare.",
+    "category": "Fun",
+    "usage": "$dare",
+    "aliases": [
+      "dare"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "declinemarry",
+    "description": "Declines a marriage proposal.",
+    "category": "Fun",
+    "usage": "$dm",
+    "aliases": [
+      "declinemarry",
+      "dm"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "divorce",
+    "description": "Divorces your current spouse.",
+    "category": "Fun",
+    "usage": "$divorce",
+    "aliases": [
+      "divorcie",
+      "divorce"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "emojify",
+    "description": "Emojify your text.",
+    "category": "Fun",
+    "usage": "$emojify <text>",
+    "aliases": [
+      "emojify"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "fact",
+    "description": "Provides a random fact.",
+    "category": "Fun",
+    "usage": "$fact",
+    "aliases": [
+      "fact"
+    ],
+    "cooldown": 2,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "feed",
+    "description": "Feed a user.",
+    "category": "Fun",
+    "usage": "$feed <user>",
+    "aliases": [
+      "feed"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "gayrate",
+    "description": "Check how much of a gay you are.",
+    "category": "Fun",
+    "usage": "$gayrate <user>",
+    "aliases": [
+      "gayrate"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "gecg",
+    "description": "Gecg a user.",
+    "category": "Fun",
+    "usage": "$gecg <user>",
+    "aliases": [
+      "gecg"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "kill",
+    "description": "Kill a user.",
+    "category": "Fun",
+    "usage": "$kill <user>",
+    "aliases": [
+      "kill"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "kiss",
+    "description": "Kiss a user.",
+    "category": "Fun",
+    "usage": "$kiss <user>",
+    "aliases": [
+      "kiss"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "lick",
+    "description": "Lick a user.",
+    "category": "Fun",
+    "usage": "$lick <user>",
+    "aliases": [
+      "lick"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "marry",
+    "description": "Marry two users.",
+    "category": "Fun",
+    "usage": "$marry",
+    "aliases": [
+      "marry",
+      "marriage"
+    ],
+    "cooldown": 60,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "matchpairs",
+    "description": "Play a game of Match Pairs.",
+    "category": "Fun",
+    "usage": "$matchpairs",
+    "aliases": [
+      "matchpairs"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "megumin",
+    "description": "Megumin a user",
+    "category": "Fun",
+    "usage": "$megumin <user>",
+    "aliases": [
+      "megumin"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "meow",
+    "description": "Meow at a user",
+    "category": "Fun",
+    "usage": "$meow <user>",
+    "aliases": [
+      "meow"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "minesweeper",
+    "description": "Play a game of Minesweeper.",
+    "category": "Fun",
+    "usage": "$minesweeper",
+    "aliases": [
+      "mine",
+      "mines",
+      "minesweeper"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "nom",
+    "description": "Nom a user",
+    "category": "Fun",
+    "usage": "$nom <user>",
+    "aliases": [
+      "nom"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "paranoia",
+    "description": "Get a random paranoia question.",
+    "category": "Fun",
+    "usage": "$paranoia",
+    "aliases": [
+      "paranoia"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "pat",
+    "description": "Pat someone.",
+    "category": "Fun",
+    "usage": "$pat @user",
+    "aliases": [
+      "pat"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "poke",
+    "description": "Poke a user.",
+    "category": "Fun",
+    "usage": "$poke <user>",
+    "aliases": [
+      "poke"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "reaction",
+    "description": "See how fast you can get the correct emoji.",
+    "category": "Fun",
+    "usage": "$reaction",
+    "aliases": [
+      "react"
+    ],
+    "cooldown": 10,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "rps",
+    "description": "Play rock paper scissors with the bot.",
+    "category": "Fun",
+    "usage": "$rps",
+    "aliases": [
+      "rps",
+      "rockpaperscissors"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "ship",
+    "description": "Ship two users",
+    "category": "Fun",
+    "usage": "$ship <user1> <user2>",
+    "aliases": [
+      "ship"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "simprate",
+    "description": "Check how much of a simp you are",
+    "category": "Fun",
+    "usage": "$simprate <user>",
+    "aliases": [
+      "simprate"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "slap",
+    "description": "Slap a user",
+    "category": "Fun",
+    "usage": "$slap <user>",
+    "aliases": [
+      "slap"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "slot",
+    "description": "Play a game of slots.",
+    "category": "Fun",
+    "usage": "$slot",
+    "aliases": [
+      "slot"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "tictactoe",
+    "description": "Play TicTacToe with your friends!",
+    "category": "Fun",
+    "usage": "$tictactoe <user>",
+    "aliases": [
+      "ttt"
+    ],
+    "cooldown": 10,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "truth",
+    "description": "Get a random truth question.",
+    "category": "Fun",
+    "usage": "$truth",
+    "aliases": [
+      "truth"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "wallpaper",
+    "description": "Get a wallpaper image.",
+    "category": "Fun",
+    "usage": "$wallpaper",
+    "aliases": [
+      "wallpaper"
+    ],
+    "cooldown": 5,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "whatyourather",
+    "description": "Get a random Would You Rather question.",
+    "category": "Fun",
+    "usage": "$whatyourather",
+    "aliases": [
+      "whatyourather",
+      "wyr"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "wink",
+    "description": "Wink at a user",
+    "category": "Fun",
+    "usage": "$wink <user>",
+    "aliases": [
+      "wink"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "woof",
+    "description": "Woof at a user",
+    "category": "Fun",
+    "usage": "$woof <user>",
+    "aliases": [
+      "woof"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "AttachFiles",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, ReadMessageHistory"
+  },
+  {
+    "name": "gdelete",
+    "description": "Deletes a giveaway.",
+    "category": "Giveaways",
+    "usage": "$gdelete <giveaway message id>",
+    "aliases": [
+      "giveawaydelete"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ManageGuild, ViewChannel, SendMessages"
+  },
+  {
+    "name": "gend",
+    "description": "Ends a giveaway.",
+    "category": "Giveaways",
+    "usage": "$gend <giveaway message id>",
+    "aliases": [
+      "giveawayend"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ManageGuild, ViewChannel, SendMessages"
+  },
+  {
+    "name": "greroll",
+    "description": "Rerolls a giveaway.",
+    "category": "Giveaways",
+    "usage": "$greroll <giveaway message id>",
+    "aliases": [
+      "giveawayreroll",
+      "reroll"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ManageGuild, ViewChannel, SendMessages"
+  },
+  {
+    "name": "snowflake",
+    "description": "Shows the time difference between between replied message and message ID.",
+    "category": "Giveaways",
+    "usage": "$snowflake <id>",
+    "aliases": [
+      "timediff"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ManageGuild, ViewChannel, SendMessages"
+  },
+  {
+    "name": "gstart",
+    "description": "Start a giveaway.",
+    "category": "Giveaways",
+    "usage": "$gstart <time> <winner count> <prize>",
+    "aliases": [
+      "giveawaystart"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "AddReactions",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "automoderation",
+    "description": "Advanced Server Auto-Moderation & Protection System",
+    "category": "AutoMod",
+    "usage": "$automod [enable|disable|status|setlog|whitelist]",
+    "aliases": [
+      "automod",
+      "am"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "ban",
+    "description": "Bans a User from server",
+    "category": "Moderation",
+    "usage": "$ban <user> [reason]",
+    "aliases": [
+      "fuckoff",
+      "fuckban"
+    ],
+    "cooldown": 20,
+    "userPerms": [
+      "BanMembers"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "BanMembers"
+  },
+  {
+    "name": "clear",
+    "description": "Clears number of messages in a particular channel",
+    "category": "Moderation",
+    "usage": "$clear (type) <amount>",
+    "aliases": [
+      "purge"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "ManageMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "hide",
+    "description": "Hides a channel",
+    "category": "Moderation",
+    "usage": "$hide <channel>",
+    "aliases": [
+      "vanish"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "kick",
+    "description": "Kicks a User from server",
+    "category": "Moderation",
+    "usage": "$Kick <user> [reason]",
+    "aliases": [
+      "getlost"
+    ],
+    "cooldown": 20,
+    "userPerms": [
+      "KickMembers"
+    ],
+    "botPerms": [
+      "KickMembers",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "KickMembers"
+  },
+  {
+    "name": "lock",
+    "description": "Locks a perticular channel",
+    "category": "Moderation",
+    "usage": "$lock <channel>",
+    "aliases": [
+      "lock",
+      "lockdown"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "nuke",
+    "description": "Nuke A Channel",
+    "category": "Moderation",
+    "usage": "$nuke",
+    "aliases": [
+      "clone",
+      "clonechannel",
+      "nukechannel"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "punishment",
+    "description": "Sets the punishment for Antinuke",
+    "category": "Moderation",
+    "usage": "$punishment <ban/kick/mute>",
+    "aliases": [
+      "punishment"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ManageGuild",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "role",
+    "description": "will give roles to server members/bots",
+    "category": "Moderation",
+    "usage": "$role <add/all/human/bot> <user/role>",
+    "aliases": [
+      "addrole"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild, ManageRoles"
+  },
+  {
+    "name": "slowmode",
+    "description": "Sets slowmode in a channel",
+    "category": "Moderation",
+    "usage": "$slowmode <time> <channel>",
+    "aliases": [
+      "slowmode"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "timeout",
+    "description": "Mutes a User",
+    "category": "Moderation",
+    "usage": "$timeouts <user> <time> <reason>",
+    "aliases": [
+      "mute",
+      "tmute",
+      "stfu"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ModerateMembers"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "ModerateMembers"
+  },
+  {
+    "name": "unban",
+    "description": "UnBan A User",
+    "category": "Moderation",
+    "usage": "$Unban <user> [reason]",
+    "aliases": [
+      "uban"
+    ],
+    "cooldown": 20,
+    "userPerms": [
+      "BanMembers"
+    ],
+    "botPerms": [
+      "BanMembers",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "BanMembers"
+  },
+  {
+    "name": "unhide",
+    "description": "Hide A Channel",
+    "category": "Moderation",
+    "usage": "$unhide <channel>",
+    "aliases": [
+      "unvanish"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "unlock",
+    "description": "Unlocks A Channel",
+    "category": "Moderation",
+    "usage": "$Unlock <channel>",
+    "aliases": [
+      "unlock"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "unmute",
+    "description": "Unmutes A User",
+    "category": "Moderation",
+    "usage": "$Unmute <user>",
+    "aliases": [
+      "removemute",
+      "removetimeout",
+      "untimeout"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ModerateMembers"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "ModerateMembers"
+  },
+  {
+    "name": "addbadge",
+    "description": "Add a predefined badge to a user's profile",
+    "category": "Profile",
+    "usage": "$addbadge <@user|id> <badge>",
+    "aliases": [],
+    "cooldown": 3,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "blacklist",
+    "description": "Will avoid bot from that channel to run any command",
+    "category": "Utilities",
+    "usage": "$blacklist <channel/command>",
+    "aliases": [
+      "bl",
+      "ignore"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageChannels"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageChannels"
+  },
+  {
+    "name": "profilecard",
+    "description": "View your profile card",
+    "category": "Profile",
+    "usage": "$profilecard [@user]",
+    "aliases": [
+      "pc"
+    ],
+    "cooldown": 5,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "setbackground",
+    "description": "Set your profile background from template images stored locally",
+    "category": "Profile",
+    "usage": "$setbackground <name>",
+    "aliases": [
+      "setbg",
+      "background",
+      "bg"
+    ],
+    "cooldown": 5,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "setbio",
+    "description": "Set your profile bio (max 200 chars)",
+    "category": "Profile",
+    "usage": "$setbio <text>",
+    "aliases": [
+      "bio"
+    ],
+    "cooldown": 5,
+    "userPerms": [],
+    "botPerms": [],
+    "permissions": "Everyone"
+  },
+  {
+    "name": "ticket",
+    "description": "Set up and manage the server ticket support system",
+    "category": "Ticket",
+    "usage": "$ticket setup [channel] [category] [role] [logs]",
+    "aliases": [
+      "tickets",
+      "ticketsystem",
+      "tkt"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "ManageMessages",
+      "EmbedLinks",
+      "AttachFiles"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "afk",
+    "description": "Set your afk status",
+    "category": "Utilities",
+    "usage": "$afk <reason>",
+    "aliases": [
+      "afk"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "audit",
+    "description": "View the server's audit logs.",
+    "category": "Utilities",
+    "usage": "$audit <action|user> [limit]",
+    "aliases": [
+      "auditlog"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewAuditLog",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewAuditLog",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewAuditLog, SendMessages"
+  },
+  {
+    "name": "avatar",
+    "description": "Shows the avatar of the mentioned user.",
+    "category": "Utilities",
+    "usage": "$avatar <user>",
+    "aliases": [
+      "av"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "banner",
+    "description": "gives a banner of user you mentioned",
+    "category": "Utilities",
+    "usage": "$banner",
+    "aliases": [
+      "banner"
+    ],
+    "cooldown": 3,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "botinfo",
+    "description": "Get information about the bot.",
+    "category": "Utilities",
+    "usage": "$botinfo",
+    "aliases": [
+      "bi"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "createembed",
+    "description": "Create a custom embed with variables and formatting.",
+    "category": "Utilities",
+    "usage": "$createembed {embed}$v{title: Your Title}$v{description: Your Description}$v{color: 000000}",
+    "aliases": [
+      "ce",
+      "embed"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "embed",
+    "description": "Create Embed can be used for announcment and welcome",
+    "category": "Utilities",
+    "usage": "$embed (Creates/Delete/Edit/Show embeds.)",
+    "aliases": [
+      "em",
+      "preset"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ManageMessages",
+      "EmbedLinks",
+      "ReadMessageHistory"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages, ManageMessages, EmbedLinks, ReadMessageHistory"
+  },
+  {
+    "name": "help",
+    "description": "Get information about all commands.",
+    "category": "Utilities",
+    "usage": "$help",
+    "aliases": [
+      "h",
+      "commands"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "introduction",
+    "description": "Get to know about the bot.",
+    "category": "Utilities",
+    "usage": "$introduction",
+    "aliases": [
+      "intro"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "invite",
+    "description": "Get the invite link for the bot",
+    "category": "Utilities",
+    "usage": "$invite",
+    "aliases": [
+      "botinvite",
+      "inv"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "inviteinfo",
+    "description": "Get information about an invite",
+    "category": "Utilities",
+    "usage": "$inviteinfo <invite>",
+    "aliases": [
+      "aboutinvite",
+      "fetchinvite",
+      "fetchserver"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "managerrole",
+    "description": "Used to give Setuproles (bypass)",
+    "category": "Utilities",
+    "usage": "$managerrole <role>",
+    "aliases": [
+      "setmanagerrole",
+      "manager"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "EmbedLinks",
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "ReadMessageHistory"
+    ],
+    "permissions": "SendMessages, EmbedLinks, ManageRoles"
+  },
+  {
+    "name": "membercount",
+    "description": "Shows the member count of the server.",
+    "category": "Utilities",
+    "usage": "$mc",
+    "aliases": [
+      "mc"
+    ],
+    "cooldown": 2,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "ping",
+    "description": "Shows bot latency information",
+    "category": "Utilities",
+    "usage": "$ping",
+    "aliases": [
+      "ping"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "prefix",
+    "description": "Set the prefix for the bot",
+    "category": "Utilities",
+    "usage": "$prefix <prefix>",
+    "aliases": [
+      "prefix",
+      "setprefix"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild, SendMessages"
+  },
+  {
+    "name": "premium",
+    "description": "Shows/Activates your premium.",
+    "category": "Utilities",
+    "usage": "$premium <activate>",
+    "aliases": [
+      "prem"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "presenceroles",
+    "description": "Gives role on basis of your activities",
+    "category": "Utilities",
+    "usage": "$preseneroles <enable/disable>",
+    "aliases": [
+      "activityrole",
+      "presencesrole",
+      "activityroles",
+      "pr"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "ManageRoles"
+    ],
+    "permissions": "ManageRoles"
+  },
+  {
+    "name": "profile",
+    "description": "Shows your bot profile.",
+    "category": "Utilities",
+    "usage": "$profile",
+    "aliases": [
+      "pf",
+      "pr"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "record",
+    "description": "will Record your voice while you are in voice chat",
+    "category": "Utilities",
+    "usage": "$record [time]",
+    "aliases": [
+      "rec"
+    ],
+    "cooldown": 10,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "roleicon",
+    "description": "Sets role icon for you",
+    "category": "Utilities",
+    "usage": "$roleicon <role> <emoji>",
+    "aliases": [
+      "ri",
+      "ricon"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages, ManageRoles"
+  },
+  {
+    "name": "rolesetup",
+    "description": "Setup Roles!",
+    "category": "Utilities",
+    "usage": "$rolesetup <name/list/delete> <role>",
+    "aliases": [
+      "rs",
+      "setuproles",
+      "setuprole"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages, ManageRoles"
+  },
+  {
+    "name": "serverinfo",
+    "description": "Shows Server Information",
+    "category": "Utilities",
+    "usage": "$serverinfo",
+    "aliases": [
+      "si"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "setup",
+    "description": "Setup the bot",
+    "category": "Utilities",
+    "usage": "$setup",
+    "aliases": [
+      "setup"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "starboard",
+    "description": "enabling you to highlight and amplify a specific sentence within a designated channel.",
+    "category": "Utilities",
+    "usage": "$starboard <enable/disable> <channel> <emoji> <count>",
+    "aliases": [
+      "starboard"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "statusrole",
+    "description": "Assigning a role to you by fetching your status information.",
+    "category": "Utilities",
+    "usage": "$statusrole <enable/disable> <role> <status>",
+    "aliases": [
+      "statusrole"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "steal",
+    "description": "Steal emojis and adds to the server.",
+    "category": "Utilities",
+    "usage": "$steal <emojis>",
+    "aliases": [
+      "stealemojis",
+      "stealemoji"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageEmojisAndStickers",
+      "ManageGuildExpressions"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "ManageEmojisAndStickers",
+      "ManageGuildExpressions"
+    ],
+    "permissions": "ManageEmojisAndStickers, ManageGuildExpressions"
+  },
+  {
+    "name": "stickynick",
+    "description": "Sticks a permenant nickname to an user.",
+    "category": "Utilities",
+    "usage": "$<snick @user nickname>",
+    "aliases": [
+      "snick",
+      "stickynickname",
+      "snickname"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageNicknames"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ManageEmojisAndStickers",
+      "ManageGuildExpressions"
+    ],
+    "permissions": "ManageNicknames"
+  },
+  {
+    "name": "support",
+    "description": "Get support for the bot.",
+    "category": "Utilities",
+    "usage": "$support",
+    "aliases": [
+      "support"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "todo",
+    "description": "Manage your personal to-do list",
+    "category": "Utility",
+    "usage": "$todo add/check/remove/list <task|page>",
+    "aliases": [
+      "task"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "translate",
+    "description": "Translate text to another language.",
+    "category": "Utilities",
+    "usage": "$tr <text> <language>",
+    "aliases": [
+      "ts",
+      "tr"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ViewChannel",
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ViewChannel, SendMessages"
+  },
+  {
+    "name": "userinfo",
+    "description": "Get all information about a user.",
+    "category": "Utilities",
+    "usage": "$userinfo <@user>",
+    "aliases": [
+      "ui",
+      "uinfo",
+      "whois"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "variables",
+    "description": "To get information about all variables.",
+    "category": "Utilities",
+    "usage": "$variable",
+    "aliases": [
+      "welcomevariables",
+      "variables"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "SendMessages"
+  },
+  {
+    "name": "vcrole",
+    "description": "Sets role for vc",
+    "category": "Utilities",
+    "usage": "$vcrole set <role>",
+    "aliases": [
+      "rolevc"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "SendMessages",
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ManageRoles"
+    ],
+    "permissions": "SendMessages, ManageRoles"
+  },
+  {
+    "name": "ytnotifier",
+    "description": "Configure and manage YouTube channel upload notifications for your server",
+    "category": "Utilities",
+    "usage": "$youtube",
+    "aliases": [
+      "youtube",
+      "yt",
+      "ytnotification",
+      "ytchannel",
+      "ytchannelnotifier",
+      "ytnotify"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "reactionrole",
+    "description": "Manage reaction roles",
+    "category": "Server",
+    "usage": "$reactionrole add <messageLink> <emoji> <role>",
+    "aliases": [
+      "rr"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageRoles"
+    ],
+    "botPerms": [
+      "AddReactions",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ManageRoles"
+    ],
+    "permissions": "ManageRoles"
+  },
+  {
+    "name": "verification",
+    "description": "Set up and manage server verification with Unverified role protection",
+    "category": "Verification",
+    "usage": "$verify setup [channel] [verifiedRole] [unverifiedRole]",
+    "aliases": [
+      "verify",
+      "verify-setup",
+      "verifysetup",
+      "vsetup"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ManageRoles"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "verify-setup",
+    "description": "Set up automatic 2-role server verification system (Verified & Unverified)",
+    "category": "Verification",
+    "usage": "$verify-setup",
+    "aliases": [
+      "verifysetup"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "ManageChannels",
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks",
+      "ManageRoles"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "case",
+    "description": "View a case by ID or list all cases for a user",
+    "category": "Moderation",
+    "usage": "$case <id | @user>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "casedelete",
+    "description": "Delete a specific case",
+    "category": "Moderation",
+    "usage": "$casedelete <id>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "caserestore",
+    "description": "Restore (undo) a case",
+    "category": "Moderation",
+    "usage": "$caserestore <caseId>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "KickMembers"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "KickMembers"
+  },
+  {
+    "name": "caseedit",
+    "description": "Edit the reason of a case",
+    "category": "Moderation",
+    "usage": "$caseedit <id> <new reason>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "clearcase",
+    "description": "Delete a case by ID or all cases for a user",
+    "category": "Moderation",
+    "usage": "$clearcase <id | @user>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageMessages"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "ManageMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageMessages"
+  },
+  {
+    "name": "warn",
+    "description": "Warn a user (creates a case)",
+    "category": "Moderation",
+    "usage": "$warn <user> <reason>",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "KickMembers"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks",
+      "ModerateMembers"
+    ],
+    "permissions": "KickMembers"
+  },
+  {
+    "name": "warnpunish",
+    "description": "Set auto punishments for warns",
+    "category": "Moderation",
+    "usage": "$warnpunish <warnCount> <action> [time in hours]",
+    "aliases": [],
+    "cooldown": 5,
+    "userPerms": [
+      "Administrator"
+    ],
+    "botPerms": [
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "Administrator"
+  },
+  {
+    "name": "autorole",
+    "description": "Gives role to user when he joins the server",
+    "category": "Welcome",
+    "usage": "$autorole <add|remove> <bot|human> <role>",
+    "aliases": [
+      "roleauto",
+      "autoroles"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "greet",
+    "description": "will ping the user and autodelete it",
+    "category": "Welcome",
+    "usage": "$greet",
+    "aliases": [
+      "greetping"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "leave",
+    "description": "Configure and manage leave/goodbye messages for your server",
+    "category": "Welcome",
+    "usage": "$leave",
+    "aliases": [
+      "goodbye",
+      "leavemessage",
+      "bye"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  },
+  {
+    "name": "welcome",
+    "description": "Configure and manage welcome messages for your server",
+    "category": "Welcome",
+    "usage": "$welcome",
+    "aliases": [
+      "wel",
+      "welcomesetup"
+    ],
+    "cooldown": 5,
+    "userPerms": [
+      "ManageGuild"
+    ],
+    "botPerms": [
+      "ViewChannel",
+      "SendMessages",
+      "EmbedLinks"
+    ],
+    "permissions": "ManageGuild"
+  }
+]
