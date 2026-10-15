@@ -7,7 +7,6 @@ const {
 } = require("discord.js");
 const Fetch = require("node-fetch");
 // const {RequestManager} = require("discord-cross-ratelimit");
-const { Cheshire } = require("cheshire");
 const eventHandler = require("./handler/eventHandler.js");
 const commandHandler = require("./handler/commandHandler.js");
 const database = require("./database.js");
@@ -39,7 +38,7 @@ module.exports = class PrismoClient extends Client {
             sweepInterval: 200,
           });
         case "MessageManager":
-          return new Cheshire({ lifetime: 1e6, lru: false });
+          return new LimitedCollection({ maxSize: 200 });
         default:
           return new Collection();
       }
